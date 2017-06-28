@@ -8,6 +8,10 @@ pipeline {
           input(message: 'What', id: 'test', ok: 'Do It', submitterParameter: 'who')
         }
         
+        waitUntil() {
+          echo 'Condition'
+        }
+        
       }
     }
   }
