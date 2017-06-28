@@ -10,6 +10,10 @@ pipeline {
         
         waitUntil() {
           echo 'Condition'
+          script {
+            return true
+          }
+          
         }
         
       }
