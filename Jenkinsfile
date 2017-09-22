@@ -23,8 +23,17 @@ pipeline {
           "Foo": {
             echo 'Foo!'
             
+          },
+          "": {
+            sh 'uname -a'
+            
           }
         )
+      }
+    }
+    stage('') {
+      steps {
+        echo 'End'
       }
     }
   }
